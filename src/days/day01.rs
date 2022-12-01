@@ -21,7 +21,7 @@ pub fn solve() -> SolutionPair {
     elves.sort_by(|a, b| b.partial_cmp(a).unwrap());
 
     let sol1 = elves[0];
-    let sol2: i32 = elves.into_iter().take(3).reduce(|acc, x| acc + x).unwrap();
+    let sol2: i32 = elves[..3].iter().sum();
 
     (Solution::I32(sol1), Solution::I32(sol2))
 }
