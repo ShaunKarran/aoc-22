@@ -6,6 +6,7 @@ authors = ["Shaun Karan <shaun.karran@polymathian.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
+boltons = "^21.0.0"
 parse = "^1.19.0"
 python = "^3.9"
 
